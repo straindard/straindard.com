@@ -1,0 +1,10 @@
+
+#@ ensure that images are treated as binary files
+*.jpg binary
+*.png binary
+*.gif binary
+*.mp4 binary
+*.m4v binary
+
+CHANGELOG    merge=union
+
