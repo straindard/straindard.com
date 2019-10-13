@@ -4,36 +4,42 @@
   "author": "gregory@straindard.com",
   "url": "https://straindard.com",
   "private": true,
-
   "engines": {
     "node": ">=10.11.0",
     "npm": ">=6.4.1"
   },
-
   "dependencies": {
     "normalize.css": "latest",
     "graphql": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest",
     "pretty-error": "latest",
     "css-select": "latest"
   },
-
-  "devDependencies": {
-  },
-
+  "devDependencies": {},
   "optionalDependencies": {
-    "nodemon": "latest"
+    "nodemon": "latest",
+    "react-scripts": "3.2.0"
   },
-
   "scripts": {
     "flow": "flow",
     "flow:check": "flow check",
-    "start": "concurrently \"npm run graphql-server\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "start": "react-scripts start",
     "eject": "react-scripts eject"
   },
-
-  "lint-staged": {
+  "lint-staged": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
