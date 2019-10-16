@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "gregory@straindard.com",
   "url": "https://straindard.com",
+  "homepage": "https://straindard.com",
   "private": true,
   "engines": {
     "node": ">=10.11.0",
@@ -18,12 +19,15 @@
   },
   "devDependencies": {},
   "optionalDependencies": {
+    "gh-pages": "2.1.1",
     "nodemon": "latest",
     "react-scripts": "3.2.0"
   },
   "scripts": {
     "flow": "flow",
     "flow:check": "flow check",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "start": "react-scripts start",
