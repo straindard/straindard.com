@@ -17,17 +17,18 @@
     "pretty-error": "latest",
     "css-select": "latest"
   },
-  "devDependencies": {},
-  "optionalDependencies": {
+  "devDependencies": {
     "gh-pages": "2.1.1",
-    "nodemon": "latest",
     "react-scripts": "3.2.0"
+  },
+  "optionalDependencies": {
+    "nodemon": "latest"
   },
   "scripts": {
     "flow": "flow",
     "flow:check": "flow check",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "start": "react-scripts start",
