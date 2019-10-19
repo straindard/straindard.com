@@ -11,3 +11,5 @@
 -----
 
 
+WWW.STRAINDARD.COM.	3599	IN	A	167.99.173.101
+see: https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
